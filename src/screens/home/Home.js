@@ -15,7 +15,7 @@ export default function Home(props){
     }
     useEffect(() => {
       loadData();
-     // console.log(movieList);
+      console.log(movieList);
     }, []);
     return(
     <div className="main-Container">

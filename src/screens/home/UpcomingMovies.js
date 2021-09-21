@@ -40,10 +40,10 @@ const classes = useStyles();
       <div className="upcomingMovieList">
       <ImageList cols={6} rowHeight={230} className={classes.imageList} >
         {props.movies.map((item) => (
-          <ImageListItem key={item.poster_url} >
-          <Link to={"/movie/"+item.id} > <img src={item.poster_url} alt={item.title} />
+          <ImageListItem key={item.Poster} >
+          <Link to={"/movie/"+item.imdbID} > <img src={item.Poster} alt={item.Title} />
             <ImageListItemBar
-              title={item.title}
+              title={item.Title}
             /> 
           </Link>
           </ImageListItem>
